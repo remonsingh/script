@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        .line{
+            display: inline;
+            padding-bottom: 5px;
+        }
+        #trending {
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-gap: 20px;
+        }
+        
+        img {
+            width: 400px;
+        }
+        
+        div {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo" class="line">
+        <img src="https://techcrunch.com/" alt="">
+    </div>
+    <div class="line">
+        <button onclick="india()">India</button>
+    </div>
+    <div class="line">
+        <button onclick="usa()">USA</button>
+    </div>
+
+    <div class="line">
+        <button onclick="nepal()">Nepal</button>
+    </div>
+    <div class="line">
+        <button onclick="china()">China</button>
+    </div>
+    <div class="line">
+        <input type="text" id="search" placeholder="Enter any Keyword">
+    </div>
+    <div class="line">
+        <button onclick="result()"> Search</button>
+    </div>
+    <div id="trending"></div>
+</body>
+
+</html>
+<script src="home.js"></script>
